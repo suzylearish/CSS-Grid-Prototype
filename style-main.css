@@ -1,0 +1,342 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #393939;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #393939;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: #FFFFFF;
+}
+
+p {
+	margin-bottom: 1.5em;
+	color: white;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+	font-family: 'Architects Daughter', cursive;
+    font-family: 'Open Sans', sans-serif;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: 'Architects Daughter', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+.main-nav {
+	padding: 1em;
+	font-size: 1.1em;
+	color: white;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.main-nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main-nav a {
+	display: block;
+	padding: .4em 1em;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+	text-decoration: underline;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/* Promo section */
+
+.logo,
+.site-title {
+	text-align: center;
+}
+
+.logo {
+	font-size: 8em;
+	color: #6D6875;
+}
+
+.site-title {
+	margin-top: -1em;
+	margin-bottom: 1em;
+	color: #B5838D;
+}
+
+/* Splash section */
+
+.splash {
+	background: #6D6875;
+	padding-bottom: 2em;
+}
+
+.splash-content {
+	padding: 1.5em;
+	background: #000000;
+}
+
+@media screen and (min-width: 600px) {
+	.splash-text {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	.splash-text p {
+		padding-top: 0;
+	}
+}
+
+/* Buckets section */
+
+.buckets {
+	padding: 2em 1em 1em;
+	background: #6D6875;
+}
+
+.buckets ul {
+	margin: 0;
+	padding: 0;
+	background: #6D6875;
+}
+
+.buckets li {
+	margin-bottom: 1em;
+	background: #FFB4A2
+	list-style-type: none;
+}
+
+.bucket {
+	padding: 1.5em;
+	background: #B5838D;
+}
+
+/* More section */
+
+.more {
+	padding: 2em;
+	background: #B5838D;
+}
+
+.more-content {
+	padding: 1.5em;
+	color: #141115;
+}
+
+/* Twins section */
+
+.sidebar {
+	background: hsl(0, 0%, 90%);
+}
+
+.twin {
+	padding: 2em;
+	background: #E5989B;
+	color: white;
+}
+
+.twin:last-of-type {
+	background: #FFB4A2;
+}
+
+/* Colophon section */
+.colophon {
+	padding: 2em;
+	background: #FFCDB2;
+	color: white;
+	text-align: center;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
+
+/*--------------------------------------------------------------
+Use flex to create a three-bucket layout
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.buckets ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.buckets li {
+			width: 48%;
+		}
+
+	}
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
